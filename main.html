@@ -1,0 +1,267 @@
+<!doctype html>
+<html styles="scroll-behavior: smooth;" lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+    <title>Zippy Stumpy Computer Repair</title>
+    
+      <div class="d-flex justify-content-center">
+      <div class="container"style="padding-top: 200px;padding-bottom: 500px;">
+        <div class="row">
+          <div class="col" style="display: flex; justify-content: center;">
+            <img id="logo" src="logo.png">
+          </div>
+          <div class="col">
+            <h1 class="text-center" style="color: #6200EE; font-size: 50pt;">Zippy Stump</h1>
+            <h5 class="text-center" style="color: #6200EE;">Computer Repair Services</h5>
+            
+            <div style="padding-top: 25px; display: flex; justify-content: center; ">
+              <button style="background-color: #6200EE;  border-radius: 10px;"><a style="text-decoration: none; color: white;"><a style="color: white; text-decoration: none;" href="#about">About Our Services</a></button>
+            </div>
+            <div style="padding-top: 25px; padding-bottom: 25px; display: flex; justify-content: center;">
+              <a href="#booking"><button style="color: white; text-decoration: none; background-color: #6200EE;  border-radius: 10px;" >Fix my Computer!</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        
+        <div class="col">
+          <h1 style="color: #6200EE; text-decoration: underline;" id="about">About Our Services<h1>
+          <h4 style="color: #6200EE;">75 Laurier Ave. E, Ottawa, ON K1N 6N5</h4>
+          <h4 style="color: #6200EE;">555-123-1234</h4>
+          <h4 style="color: #6200EE; text-decoration: underline;">Business Hours</h4>
+          <h5 style="color: #6200EE;">Mon 8 AM - 9PM</h5>
+          <h5 style="color: #6200EE;">Tue 8 AM - 9PM</h5>
+          <h5 style="color: #6200EE;">Wed 8 AM - 9PM</h5>
+          <h5 style="color: #6200EE;">Thu 8 AM - 9PM</h5>
+          <h5 style="color: #6200EE;">Fri 8 AM - 9PM</h5>
+          <h5 style="color: #6200EE;">Sat 8 AM - 9PM</h5>
+          <h5 style="color: #6200EE;">Sun 8 AM - 9PM</h5>
+        </div>
+        
+      <div class="mapouter"><div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=uottawa&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><style>.gmap_canvas {overflow:hidden;background:none!important;height:80%;width:100%;}</style></div></div>
+        
+      </div>
+      <div class="row" style=" margin-top: -40px">
+        <h2 style="color: #6200EE; text-decoration: underline;" id="experts">Service Experts</h2>
+
+        <table class="table" style="color:#6200EE;">
+          <thead>
+            <tr>
+              
+              <th scope="col">Name</th>
+              <th scope="col">Platform</th>
+              <th scope="col">Specialization(s)</th>
+              <th scope="col">Rate</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              
+              <th>Dave</th>
+              <td>Mac</td>
+              <td><span data-bs-toggle="modal" data-bs-target="#monitor-modal" style="text-decoration: underline; color:#6200EE;">Monitor</span></td>
+              <td>35$/hour</td>
+              <td><button id="book-btn1" onclick="update()" style="background-color: #6200EE;  border-radius: 10px; opacity: 0; color: white;"><span data-bs-toggle="modal" data-bs-target="#confirmation-modal">Book</button></span></td>
+            </tr>
+            <tr>
+              <th>Brooklyn</th>
+              <td>Windows</td>
+              <td><span data-bs-toggle="modal" data-bs-target="#monitor-modal" style="text-decoration: underline;color:#6200EE;">Monitor</span>, <span data-bs-toggle="modal" data-bs-target="#hardware-modal" style="text-decoration: underline;color:#6200EE;">Hardware</span></td>
+              <td>28$/hour</td>
+              <td><button id="book-btn2" onclick="update()"  style="background-color: #6200EE;  border-radius: 10px; opacity: 0; color: white;"><span data-bs-toggle="modal" data-bs-target="#confirmation-modal">Book</button></span></td>
+            </tr>
+            <tr>
+              <th>Nicholas</th>
+              <td>Windows</td>
+              <td><span data-bs-toggle="modal" data-bs-target="#monitor-modal" style="text-decoration: underline;color:#6200EE;">Monitor</span>, <span data-bs-toggle="modal" data-bs-target="#pheripherals-modal" style="text-decoration: underline;color:#6200EE;">Peripherals</span></td>
+              <td>25$/hour</td>
+              <td><button id="book-btn3" onclick="update()"  style="background-color: #6200EE;  border-radius: 10px; opacity: 0; color: white;"><span data-bs-toggle="modal" data-bs-target="#confirmation-modal">Book</button></span></td>
+            </tr>
+            <tr>
+              <th>Chase</th>
+              <td>Mac</td>
+              <td><span data-bs-toggle="modal" data-bs-target="#monitor-modal" style="text-decoration: underline;color:#6200EE;">Monitor</span>, <span data-bs-toggle="modal" data-bs-target="#pheripherals-modal" style="text-decoration: underline;color:#6200EE;">Peripherals</span></td>
+              <td>19$/hour</td>
+              <td><button id="book-btn4" onclick="update()" style="background-color: #6200EE;  border-radius: 10px; opacity: 0; color: white;"><span data-bs-toggle="modal" data-bs-target="#confirmation-modal">Book</button></span></td>
+            </tr>
+            <tr>
+              <th>Bruno</th>
+              <td>Windows</td>
+              <td><span data-bs-toggle="modal" data-bs-target="#hardware-modal" style="text-decoration: underline;color:#6200EE;">Hardware</span>, <span data-bs-toggle="modal" data-bs-target="#pheripherals-modal" style="text-decoration: underline;color:#6200EE;">Peripherals</span></td>
+              <td>34$/hour</td>
+              <td><button id="book-btn5" onclick="update()"  style="background-color: #6200EE;  border-radius: 10px; opacity: 0; color: white;"><span data-bs-toggle="modal" data-bs-target="#confirmation-modal">Book</button></span></td>
+            </tr>
+            <tr>
+              <th>Alexa</th>
+              <td>Windows</td>
+              <td><span data-bs-toggle="modal" data-bs-target="#hardware-modal" style="text-decoration: underline;color:#6200EE;">Hardware</span></td>
+              <td>33$/hour</td>
+              <td><span><button id="book-btn6" onclick="update()"  style="background-color: #6200EE; opacity: 0; border-radius: 10px; color: white;"><span data-bs-toggle="modal" data-bs-target="#confirmation-modal">Book</span></button></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="row" style="padding-top: 40px;" id="booking" >
+        
+        
+        <h2><a href="#booking" style=" text-decoration: underline; color: #6200EE;">Let's start your booking process.</a></h2>
+        <span id="booking-space" style="height: 100%; width: 100%; display: flex; justify-content: center; align-items: center;" >
+          <form onsubmit="return false">
+            <div id="q1">
+            <h5 style="display: flex; justify-content: center; margin-top: 10px; color: #6200EE;">What platform are you using?</h5>
+              <div class="btn-group1" style=" display: flex; justify-content: center; align-items: center;">
+                <input onclick="formUpdate()" type="button" style="background-color: #6200EE;  border-radius: 10px; color: white;" name ="platform" value="Windows">
+                <input onclick="formUpdate()" type="button" style="margin-left: 20px; background-color: #6200EE;  border-radius: 10px; color: white;" name ="platform" value="Mac">
+              </div>
+            </div>
+            
+        <div id="q2" style="opacity: 0;">
+        <h5 style="padding-top: 75px;color: #6200EE; display: flex; justify-content: center;">Where is your problem? *</h5>
+        <div class="form-group2" style="display: flex; justify-content: center; align-items: center;">
+          
+          <select type="select" onclick="formUpdate()" required="required" class="custom-select" style="padding-left: 10px; padding-right: 10px; background-color: white;  border-radius: 7px; color: #6200EE;" id="inputGroupSelect01">
+            <option selected>Choose...</option>
+            <option value="1">Hardware</option>
+            <option value="2">Monitor</option>
+            <option value="3">Peripheral</option>
+          </select>
+            <button style="margin-left: 20px; background-color: #6200EE;  border-radius: 10px; "> <a href="https://www.google.com/search?q=5551231234" style="text-decoration: none; color: white;" target="_blank">Call <i class="bi bi-telephone-fill"></i></a></button>
+          </div>
+        </div>
+        <div id="q3" style="opacity: 0;">
+          <h5 style="padding-top: 75px;color: #6200EE; display: flex; justify-content: center;">Pick a date and time. *</h5>
+          <div class="form-group4" style="display: flex; justify-content: center;">
+          <input required="required" id="date" type="date" style="background-color: white;  border-radius: 7px; color: #6200EE;">
+          <input required="required" id="time" type="time" style="margin-left: 10px; background-color: white; border-radius: 7px; color: #6200EE;">
+          </div>
+          <h5 for="exampleFormControlInput1" style="margin-top: 50px; color: #6200EE; display: flex; justify-content: center;">Please enter your name and email. *</h5>
+          <input onchange="formUpdate()" style="margin-top: 10px;" required="required" type="text" class="form-control" name="name" id="name-field" placeholder="Name">
+          <input onchange="formUpdate()" style="margin-top: 10px; margin-bottom: 20px;" required="required" type="email" class="form-control" id="email-field" placeholder="name@example.com">
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <button id="q4" onclick="formSubmit()" style="opacity: 0; background-color: #6200EE; margin-bottom: 10px; border-radius: 10px;"><a href="#experts" style=" color: white; text-decoration: none;">Choose an Expert</a></button>
+        </div>
+          </form>
+        </span>
+      </div>
+    </div>
+    
+
+    <!-- Modal Implementation -->
+    <div class="modal fade" id="monitor-modal" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" style="color:#6200EE;">
+            Description on <b>monitors</b> to help diagnose the problem. Average Price of Repairs: $200-250$
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="hardware-modal" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" style="color:#6200EE;">
+            Description on different <b>hardware</b> to help diagnose the problem. Average Price of Repairs: $100-250$
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="pheripherals-modal" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" style="color:#6200EE;">
+            Description on <b>peripherals</b> to help diagnose the problem. Average Price of Repairs: $50-100$
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="confirmation-modal" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" style="color:#6200EE;">
+            Are you sure you want to continue with booking confirmation?
+            <span data-bs-toggle="modal" data-bs-target="#booking-modal">
+            <button type="button" data-bs-dismiss="modal" style="margin-top: 20px; background-color: #6200EE; margin-bottom: 10px; border-radius: 10px; color: white;">
+              Confirm Booking
+            </button>
+          </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="booking-modal" aria-labelledby="modal-title" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body" style="color:#6200EE;">
+            
+            <h5 id="confirmation-text" >Thank you for your order!</h5>
+            <span id="email-text">An email receipt has been sent to your email.</span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+        
+    <script>
+    function update() {
+      const name = document.getElementById('name-field').value;  
+      if(name != ""){
+        document.getElementById('confirmation-text').innerHTML = "Thank you for your order, " + name + ".";
+      }
+      
+      const email = document.getElementById('email-field').value;
+      if (email != ""){
+        document.getElementById('email-text').innerHTML = "An email receipt has been sent to " + email;
+      }
+      
+    }
+
+    function formSubmit() {
+      var date = document.getElementById('date');
+      var time = document.getElementById('time');
+      if(date.value==""){
+
+      }
+      for(var i=1; i < 10; i++){
+        document.getElementById('book-btn' + i).style.opacity = "1";
+      }
+    }
+    var count = 1;
+    function formUpdate() {
+      
+      if (count == 3) {
+        
+      }else{
+        document.getElementById('q' + (count + 1)).style.opacity = "1";
+        count++;
+        console.log(count);
+        
+      }
+        const name = document.getElementById('name-field').value;  
+        const email = document.getElementById('email-field').value;
+        if (email != "" && name != ""){
+          document.getElementById('q4').style.opacity = "1";
+        }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
